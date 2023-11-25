@@ -33,7 +33,7 @@ const AuthModal = () => {
       router.refresh();
       onClose();
     }
-  }, [session, router, onClose])
+  }, [session, router, onClose]);
 
   const onChange = (open: boolean) => {
     if (!open) {
@@ -51,7 +51,7 @@ const AuthModal = () => {
       <Auth
         theme="dark"
         magicLink
-        providers={["github"]} // TODO: add more providers before release
+        providers={["github", "discord", "twitch"]} // TODO: add more providers before release
         supabaseClient={supabaseClient}
         appearance={{
           theme: ThemeSupa,
