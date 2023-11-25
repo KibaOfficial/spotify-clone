@@ -20,7 +20,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import Modal from "@/components/Modal";
 
 // Hooks
-import useAuthModal from "@/hooks/useAUthModal";
+import useAuthModal from "@/hooks/useAuthModal";
 
 const AuthModal = () => {
   const supabaseClient = useSupabaseClient();

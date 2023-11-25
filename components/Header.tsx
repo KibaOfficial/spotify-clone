@@ -15,7 +15,7 @@ import Button from "@/components/Button";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 // Hooks
-import useAuthModal from "@/hooks/useAUthModal";
+import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
 
 // Icons
