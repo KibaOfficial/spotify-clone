@@ -32,7 +32,7 @@ export interface Database {
           }
         ];
       };
-      favorites: {
+      liked_songs: {
         Row: {
           created_at: string;
           song_id: number;
@@ -50,14 +50,14 @@ export interface Database {
         };
         Relationships: [
           {
-            foreignKeyName: "favorites_song_id_fkey";
+            foreignKeyName: "liked_songs_song_id_fkey";
             columns: ["song_id"];
             isOneToOne: false;
             referencedRelation: "songs";
             referencedColumns: ["id"];
           },
           {
-            foreignKeyName: "favorites_user_id_fkey";
+            foreignKeyName: "liked_songs_user_id_fkey";
             columns: ["user_id"];
             isOneToOne: false;
             referencedRelation: "users";
